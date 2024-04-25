@@ -1,12 +1,12 @@
-const calcCubeVol = s => {
-    return s ** 3;
-}
+class Cube {
+    constructor(s) {
+        this.s = s;
+    }
 
-const calcCubeSurfaceArea = s => {
-    return 6 * (s ** 2);
+    calcVol = () => this.s ** 3
+    calcSurfaceArea = () => 6 * (this.s ** 2);
 }
 
 module.exports = {
-    calcCubeVol,
-    calcCubeSurfaceArea
+    Cube
 }
